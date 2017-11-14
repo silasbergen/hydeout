@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Silas Bergen
 tagline:          'Course web pages'
 description:      'Courses, resources, and other miscellany'
-url:              https://silasbergen.github.io/
+url:              https://silasbergen.github.io/hydeout
 #baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
