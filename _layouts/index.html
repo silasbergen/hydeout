@@ -3,40 +3,19 @@ layout: default
 ---
 
 <div class="content">
-  {% include pagination-newer.html %}
+<h1> Welcome!  </h1>
 
-  {{ content }}
 
-  {% for post in paginator.posts %}
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    {% include post-meta.html post=post %}
+<img src="../img/gc.png" align = "right" alt="Smiley face" height="200" width="200" hspace="300">
+<p> I currently teach statistics and data science at Winona State University in Winona, MN.  This website hosts all my course materials
+for courses I am teaching and have previously taught.  Feel free to use and modify as you see fit.  I also use this page as a resource for my students
+and as a professional portfolio. </p>
 
-    {% if post.excerpt %}
-      {{ post.excerpt }}
-    {% else %}
-      {{ post.content }}
-    {% endif %}
+<h3> Professional interests </h3> 
 
-    {% if post.excerpt %}
-      {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-      {% capture content_words %}
-        {{ post.content | number_of_words }}
-      {% endcapture %}
-      {% capture excerpt_words %}
-        {{ post.excerpt | number_of_words }}
-      {% endcapture %}
+Socrates once said "Education is the kindling of a flame, not the filling of a vessel."  
 
-      {% if content_words != excerpt_words %}
-        <a href="{{ site.baseurl }}{{ post.url }}">More &hellip;</a>
-      {% endif %}
-    {% endif %}
-  </article>
-  {% endfor %}
-
-  {% include pagination-older.html %}
+<h3> Personal interests </h3> 
+<p> My other interests include backpacking; racquetball; baseball (both fantasy and actual); podcasts; games (board and card variety); craft beer; and spending time with my wife and two boys.  Life is full.</p>
+	
 </div>
